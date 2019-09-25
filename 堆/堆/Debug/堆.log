@@ -1,0 +1,6 @@
+﻿  heap.cpp
+F:\c++\ProjectFile\堆\堆\heap.cpp(105,23): warning C4018:  “<”: 有符号/无符号不匹配
+  源.cpp
+  正在生成代码...
+F:\c++\ProjectFile\堆\堆\heap.cpp(116,24): warning C4018:  “<”: 有符号/无符号不匹配
+  堆.vcxproj -> F:\c++\ProjectFile\堆\Debug\堆.exe
