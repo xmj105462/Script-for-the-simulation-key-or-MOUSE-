@@ -22,8 +22,7 @@ namespace xmj{
 	typedef DateLink* DateLink_ptr;
 	typedef struct LinkStack {
 		size_t length;
-		DateLink_ptr top;
-		DateLink_ptr base;
+		DateLink_ptr top;		
 		LinkStack();
 	}LS;
 	bool initLinkStack(LinkStack& linkStack, DLhead& head);

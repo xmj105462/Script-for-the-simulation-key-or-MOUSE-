@@ -3,7 +3,7 @@
 namespace xmj{
 	LinkStack::LinkStack() {
 		length = 0;
-		top = nullptr; base = nullptr;
+		top = nullptr; 
 	}
 	DateLink::DateLink() {
 		//date = new DateType();
@@ -24,7 +24,7 @@ namespace xmj{
 	//DateLink::~DateLink() { delete date; }
 	bool pushLinkStack(LinkStack& linkStack, DateLink& dateNode, DLhead& head) {
 		if (linkStack.length == MAX_SIZE)return false;		
-		if (head.next == nullptr&&linkStack.base== linkStack.top) {
+		if (head.next == nullptr) {
 			head.next = &dateNode; dateNode.front = &head;
 			linkStack.top = &dateNode; linkStack.length++;
 			return true; 
@@ -56,13 +56,12 @@ namespace xmj{
 			linkStack.top->next = nullptr; delete tp;
 			linkStack.length--;
 		}
-		linkStack.base=nullptr; linkStack.top = linkStack.base;
+		linkStack.top = nullptr;
 		return true;
 	}	
 	bool initLinkStack(LinkStack& linkStack, DLhead& head) {
-		if (&linkStack == nullptr || !&head)return false;
-		linkStack.base = &head;
-		linkStack.top = linkStack.base;
+		if (&linkStack == nullptr || !&head)return false;		
+		linkStack.top = &head;
 		return true;
 	}
 }
