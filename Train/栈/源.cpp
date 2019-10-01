@@ -1,11 +1,39 @@
-#include<iostream>
+//#include<iostream>
 //#include"SqStack.h"
 //#include"SqStack2.h"
-#include"LinkStack.h"
-using namespace std;
-using namespace xmj;
-
+//#include"LinkStack.h"
+//#include<string>
+#include "exp.h"
+//using namespace std;
+//using namespace xmj;
+//#include"Man.h"
+//#include"Maze.h"
+//#include"expression.h"
 int main() {
+	//迷宫
+	/*initFrame();
+	LinkStack ls; DLhead head;
+	initLinkStack(ls, head);
+	initPosition(head, ls);
+	move(ls, head);*/
+	//表达式求值
+	string str = "12+3*6/3+4*5="; //int ldate = 0;
+	//for (size_t i = 0; i < str.length(); i++) {
+	//	//cout<< isdigit(str[i])<<"\t";
+	//	if (isdigit(str[i])) {
+	//		cout << "ldate前==" << ldate << endl;
+	//		ldate *= 10; 
+	//		cout << "ldate中==" << ldate  << endl;
+	//		ldate += str[i] - '0';
+	//		cout << "str[i]- '0' ==" << (int)(str[i] - '0') << endl;
+	//		cout << "ldate后==" << ldate << endl;
+	//	}
+	//	else {
+	//		cout << "得到左操作数:" << ldate << endl; //PushStack(data_stack, ldata);//左操作数入栈 
+	//		//i--; //status = 1;
+	//	}
+	//}
+	cout << calculate(str) << endl;
 	/*SQ_S sqs;
 	initSqStack(sqs, MAX_SIZE);
 	for (size_t i = 0; i <= MAX_SIZE; i++) {
@@ -60,7 +88,7 @@ int main() {
 		cout << "删除栈失败";
 	}*/
 	//作业2，链式栈
-	LinkStack ls; DLhead head;
+	/*LinkStack ls; DLhead head;
 	initLinkStack(ls, head);
 	for (size_t i = 0; i <= MAX_SIZE; i++) {
 		DateLink *dateNode = new DateLink();
@@ -87,7 +115,10 @@ int main() {
 	}
 	else {
 		cout << "删除栈失败";
-	}
+	}*/
+	/*string s1; string s2 = "sfasdf";
+	memcpy(&s1,&s2,sizeof(s2));
+	cout << s1;*/
 	system("pause");
 	return 0;
 }
